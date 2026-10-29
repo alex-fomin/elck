@@ -1,0 +1,72 @@
+name: elck
+options:
+  bundleIdPrefix: app
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+packages:
+  ElckCore:
+    path: .
+targets:
+  elck:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/elck
+      - path: Resources/Assets.xcassets
+      - path: Resources/elck-doc.icns
+    dependencies:
+      - package: ElckCore
+        product: ElckCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.elck
+        PRODUCT_NAME: elck
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_STYLE: Manual
+        CODE_SIGN_IDENTITY: "Apple Development: shurickfomin@gmail.com (VP75B3FV9U)"
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_INJECT_BASE_ENTITLEMENTS: NO
+        GENERATE_INFOPLIST_FILE: YES
+        SWIFT_VERSION: "5.0"
+        ENABLE_APP_SANDBOX: NO
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: Support/Info.plist
+      properties:
+        CFBundleName: elck
+        CFBundleDisplayName: elck
+        CFBundleIconName: AppIcon
+        NSServices:
+          - NSMenuItem:
+              default: Seal with elck
+            NSMessage: sealFiles
+            NSPortName: elck
+            NSRequiredContext:
+              NSTextContent: FilePath
+            NSSendTypes:
+              - NSFilenamesPboardType
+              - public.file-url
+            NSSendFileTypes:
+              - public.item
+              - public.data
+              - public.content
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: app.elck.elck
+            UTTypeDescription: elck sealed file
+            UTTypeConformsTo:
+              - public.data
+            UTTypeIconFile: elck-doc
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - elck
+                - ELCK
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: elck
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Owner
+            CFBundleTypeIconFile: elck-doc
+            LSItemContentTypes:
+              - app.elck.elck

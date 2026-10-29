@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05117EAA99063064D98D3365 /* EnclaveKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAE7B4D65DAAC81FA0E30C2 /* EnclaveKey.swift */; };
+		23789EFA9D8343B4AA06F96B /* elck-doc.icns in Resources */ = {isa = PBXBuildFile; fileRef = 843FBE577D9664CE2D978EBB /* elck-doc.icns */; };
+		47644BE8174A9F7859F3D17A /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22807C9CA62587F143542190 /* App.swift */; };
+		9EE103CF0C5A72EADCAD4C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3869709370A9205898642E40 /* Assets.xcassets */; };
+		A44FDBD1CCFBC596C0AB882C /* ElckCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4E4FE26FE60D5D336F55D8D2 /* ElckCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22807C9CA62587F143542190 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		3869709370A9205898642E40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FAE7B4D65DAAC81FA0E30C2 /* EnclaveKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnclaveKey.swift; sourceTree = "<group>"; };
+		4313063ABB59A0F60E5B6AE2 /* elck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		843FBE577D9664CE2D978EBB /* elck-doc.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "elck-doc.icns"; sourceTree = "<group>"; };
+		AB7F42E4C757EB26F6BD2BB8 /* elck */ = {isa = PBXFileReference; lastKnownFileType = folder; name = elck; path = .; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F68495140A9FB63F754DFFC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A44FDBD1CCFBC596C0AB882C /* ElckCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F9F43418B309BE328EE263E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AB7F42E4C757EB26F6BD2BB8 /* elck */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		458F769BF6E7867C55E1E50A /* elck */ = {
+			isa = PBXGroup;
+			children = (
+				22807C9CA62587F143542190 /* App.swift */,
+				3FAE7B4D65DAAC81FA0E30C2 /* EnclaveKey.swift */,
+			);
+			path = elck;
+			sourceTree = "<group>";
+		};
+		4C5CABC9E33595ACDD0719AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3869709370A9205898642E40 /* Assets.xcassets */,
+				843FBE577D9664CE2D978EBB /* elck-doc.icns */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		86C05F34B0D70415FC28645A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				458F769BF6E7867C55E1E50A /* elck */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CE4EBAC271839439608D66E7 = {
+			isa = PBXGroup;
+			children = (
+				3F9F43418B309BE328EE263E /* Packages */,
+				4C5CABC9E33595ACDD0719AD /* Resources */,
+				86C05F34B0D70415FC28645A /* Sources */,
+				EA51CC9F43B4C39ABFC36FE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA51CC9F43B4C39ABFC36FE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4313063ABB59A0F60E5B6AE2 /* elck.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D50284CF08A731C5072C8DA /* elck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3E9848484462781896E4D0C /* Build configuration list for PBXNativeTarget "elck" */;
+			buildPhases = (
+				B43F1A2CCD72F677F72E26DF /* Sources */,
+				76954E1E99518BF5F260E667 /* Resources */,
+				F68495140A9FB63F754DFFC6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = elck;
+			packageProductDependencies = (
+				4E4FE26FE60D5D336F55D8D2 /* ElckCore */,
+			);
+			productName = elck;
+			productReference = 4313063ABB59A0F60E5B6AE2 /* elck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DADC01C088BAAF660E8E4370 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1D50284CF08A731C5072C8DA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = E40AC5B1A76D7CD08EEF36B5 /* Build configuration list for PBXProject "elck" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CE4EBAC271839439608D66E7;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B8563271461BA0ED6C9AA2D /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EA51CC9F43B4C39ABFC36FE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D50284CF08A731C5072C8DA /* elck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76954E1E99518BF5F260E667 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE103CF0C5A72EADCAD4C21 /* Assets.xcassets in Resources */,
+				23789EFA9D8343B4AA06F96B /* elck-doc.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B43F1A2CCD72F677F72E26DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47644BE8174A9F7859F3D17A /* App.swift in Sources */,
+				05117EAA99063064D98D3365 /* EnclaveKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E7C56A5F9F5C78876531645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		4A2C4DE602F8492A2CEADACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development: shurickfomin@gmail.com (VP75B3FV9U)";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.elck;
+				PRODUCT_NAME = elck;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8A55A933D26AEFA21CE454C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development: shurickfomin@gmail.com (VP75B3FV9U)";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Support/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.elck;
+				PRODUCT_NAME = elck;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9E399A2CC28154D9E197A230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3E9848484462781896E4D0C /* Build configuration list for PBXNativeTarget "elck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A55A933D26AEFA21CE454C1 /* Debug */,
+				4A2C4DE602F8492A2CEADACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E40AC5B1A76D7CD08EEF36B5 /* Build configuration list for PBXProject "elck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E399A2CC28154D9E197A230 /* Debug */,
+				0E7C56A5F9F5C78876531645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5B8563271461BA0ED6C9AA2D /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4E4FE26FE60D5D336F55D8D2 /* ElckCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ElckCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DADC01C088BAAF660E8E4370 /* Project object */;
+}
